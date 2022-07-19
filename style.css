@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: Agency FB;
+}
+.bigimg{
+    display: none;
+}
+input{
+    display: none;
+}
+.logo2{
+    display: none;
+}
+.down{
+    display: none;
+}
+.logo-label{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.logo{
+    color: #000;
+}
+.checkbox{
+    background-color: #fff;
+}
+.checkbox{
+    margin-top: 10px;
+    margin-left: 225px;
+}
+.links{
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    margin-left: 200%;
+    width: 100%;
+    transition: all 0.4s;
+    box-shadow: 10px 50px 50px #000;
+    border: 1px solid #0001;
+    border-radius: 20px;
+}
+.links ul li{
+    list-style: none;
+    padding: 10px 15px;
+}
+.links ul li ol{
+    font-size: 10px;
+    padding: 5px 20px;
+    margin-top: -100%;
+    transition: all 0.1s;
+}
+.links ul li ol a .icon{
+    padding: 0px 5px;
+}
+.links ul .company{
+    margin-top: 20px;
+}
+.links ul li ol a{
+    padding: 10px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    margin-right: 10px;
+}
+.links ul .careers{
+    margin-top: 20px;
+}
+.links .userlinks{
+    padding: 10px 30px;
+}
+.links .userlinks .login{
+    margin-left: 30px;
+}
+.links .userlinks .register{
+    border: 1px solid hsl(0, 0%, 41%);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.content{
+    font-family: 'Epilogue', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.smallimg{
+    width:350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content .left-side{
+    padding: 20px 30px;
+}
+.content .left-side h1{
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+.content .left-side p{
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.content .left-side button{
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+.content .left-side .brands ul{
+    display: flex;
+}
+.content .left-side .brands ul li{
+    list-style: none;
+}
+.content .left-side .brands ul li img{
+    width: 75%;
+}
+#check:checked ~ .links{
+    margin-left: 50%;
+}
+#checklink:checked ~ ol{
+    margin-top: 0%;
+}
+#checklink:checked ~ .up{
+    display: none;
+}
+#checklink:checked ~ .down{
+    display: inline-block;
+}
+#checklinks:checked ~ ol{
+    margin-top: 0%;
+}
+#checklinks:checked ~ .up{
+    display: none;
+}
+#checklinks:checked ~ .down{
+    display: inline-block;
+}
+@media (min-width: 390px){
+    .logo-label{
+        display: none
+    }
+    .logo2{
+        display: inline;
+        padding: 15px 20px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .links{
+        margin-left: 0%;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        background-color: #fff;
+        height: 30px;
+        width: 100%;
+        transition: all 0.4s;
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+    }
+    .links ul{
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+    }
+    .links ul li ol{
+        margin-top: -300%;
+        background-color: #fafafa;
+        width: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+    .userlinks{
+        display: none;
+    }
+    .content{
+        padding-top: 20%;
+    }
+    .links ul .company{
+        margin-top: 0px;
+    }
+    .links ul .careers{
+        margin-top: 0px;
+    }
+}
+@media (min-width: 544px){
+    .smallimg{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        text-align: justify;
+    }
+    .bigimg{
+        display: inline;
+        width: 200px;
+    }
+    .links{
+        background-color: #fafafa;
+    }
+}
+@media (min-width: 732px){
+    .links .userlinks{
+        padding: 15px 20px;
+        display: flex;
+        margin-top: -15px;
+    }
+    .links .userlinks .login{
+        margin-left: 50%;
+    }
+    .links ul .about{
+        margin-right: 125px;
+    }
+    .links ul .firstlink{
+        margin-left: 10%;
+    }
+    .links .userlinks .register{
+        border: 1px solid hsl(0, 0%, 41%);
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+}
+@media (min-width: 980px){
+    .bigimg{
+        width: 400px;
+        margin-top: -150px;
+        margin-left: 25%;
+    }
+    .content p{
+        width: 400px;
+    }
+    .content{
+        margin-top: -10px;
+        margin-left: 5%;
+    }
+}
+@media (min-width: 1115px){
+    .links .userlinks .login{
+        margin-left: 200px;
+    }
+    .links ul .company{
+        padding: 10px 30px;
+    }
+}

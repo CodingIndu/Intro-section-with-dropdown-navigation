@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&family=Epilogue:wght@200;300;400;500;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Public+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-label">
+      <div class="logo">
+        <h1><span>snap</span></h1>
+      </div>
+      <div class="checkbox">
+        <label for="check" class="menu-open"><img src="images/icon-menu.svg"></label>
+      </div>
+    </div>
+    <input type="checkbox" id="check" class="checkinput">
+    <div class="links">
+      <div class="nav">
+        <div class="logo2">
+          <h1><span>snap</span></h1>
+        </div>
+        <ul>
+          <li class="firstlink"><a href="#">Features</a>
+            <input type="checkbox" id="checklink">
+            <label for="checklink" class="up"><img src="images/icon-arrow-down.svg"></label>
+            <label for="checklink" class="down"><img src="images/icon-arrow-up.svg"></label>
+            <br><br>
+            <ol><a href="#"><img class="icon" src="images/icon-todo.svg"> List</a></ol>
+            <ol><a href="#"><img class="icon" src="images/icon-calendar.svg">Calender</a></ol>
+            <ol><a href="#"><img class="icon" src="images/icon-reminders.svg">Reminders</a></ol>
+            <ol><a href="#"><img class="icon" src="images/icon-planning.svg">Planning</a></ol>
+          </li>
+          <li class="company"><a href="#">Company</a>
+            <input type="checkbox" id="checklinks">
+            <label for="checklinks" class="up"><img src="images/icon-arrow-down.svg"></label>
+            <label for="checklinks" class="down"><img src="images/icon-arrow-up.svg"></label>
+            <br><br>
+            <ol class="ol"><a href="#">History</a></ol>
+            <ol class="ol"><a href="#">Our Team</a></ol>
+            <ol class="ol"><a href="#">Blog</a></ol>
+          </li>
+          <li class="careers"><a href="#">Careers</a></li>
+          <li class="about"><a href="#">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="userlinks">
+        <ul>
+          <li><a href="#" class="login">Login</a></li>
+          <li><a class="register" href="#">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="upside">
+      <img class="smallimg" src="images/image-hero-mobile.png">
+    </div>
+    
+    <div class="left-side">
+      <h1>Make remote work</h1>
+
+      <p>Get your team in sync, no matter your location.
+        Streamline processes, create team rituals and watch productivity soar
+      </p>
+
+      <button>Learn more</button>
+
+      <div class="brands">
+        <ul>
+          <li><img src="images/client-databiz.svg"></li>
+          <li><img src="images/client-audiophile.svg"></li>
+          <li><img src="images/client-meet.svg"></li>
+          <li><img src="images/client-maker.svg"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right-side">
+      <img class="bigimg" src="images/image-hero-desktop.png">
+    </div>
+  </section>
+</body>
+</html>
